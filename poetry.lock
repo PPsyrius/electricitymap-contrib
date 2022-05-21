@@ -341,6 +341,9 @@ category = "main"
 optional = true
 python-versions = ">=3.6"
 
+[package.dependencies]
+numpy = ">=1.17.3"
+
 [[package]]
 name = "openpyxl"
 version = "3.0.9"
@@ -610,15 +613,16 @@ pandas = ["pandas"]
 
 [[package]]
 name = "testfixtures"
-version = "6.0.2"
+version = "6.18.5"
 description = "A collection of helpers and mock objects for unit tests and doc tests."
 category = "dev"
 optional = false
 python-versions = "*"
 
 [package.extras]
-build = ["sphinx", "pkginfo", "setuptools-git", "wheel", "twine"]
-test = ["pytest", "mock", "sybil", "coverage", "coveralls", "zope.component", "pytest-django", "django (<2)", "django"]
+build = ["setuptools-git", "wheel", "twine"]
+docs = ["sphinx", "zope.component", "sybil", "twisted", "mock", "django (<2)", "django"]
+test = ["pytest (>=3.6)", "pytest-cov", "pytest-django", "zope.component", "sybil", "twisted", "mock", "django (<2)", "django"]
 
 [[package]]
 name = "toml"
@@ -752,8 +756,8 @@ parsers = ["arrow", "beautifulsoup4", "demjson3", "eiapy", "html5lib", "imageio"
 
 [metadata]
 lock-version = "1.1"
-python-versions = '>= 3.7.1, < 4.0'
-content-hash = "6fecbd102b82a9cb0c5fb7da68989404f09ec042133766050b48c229834e6b3a"
+python-versions = ">= 3.7.1, < 4.0"
+content-hash = "527e34c16bb61b6dd5c67b192bdda6d786f619669b2b6f2e5bace84d75340349"
 
 [metadata.files]
 appdirs = [
@@ -959,6 +963,7 @@ numpy = [
     {file = "numpy-1.22.3-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:8251ed96f38b47b4295b1ae51631de7ffa8260b5b087808ef09a39a9d66c97ab"},
     {file = "numpy-1.22.3-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:48a3aecd3b997bf452a2dedb11f4e79bc5bfd21a1d4cc760e703c31d57c84b3e"},
     {file = "numpy-1.22.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a3bae1a2ed00e90b3ba5f7bd0a7c7999b55d609e0c54ceb2b076a25e345fa9f4"},
+    {file = "numpy-1.22.3-cp310-cp310-win32.whl", hash = "sha256:f950f8845b480cffe522913d35567e29dd381b0dc7e4ce6a4a9f9156417d2430"},
     {file = "numpy-1.22.3-cp310-cp310-win_amd64.whl", hash = "sha256:08d9b008d0156c70dc392bb3ab3abb6e7a711383c3247b410b39962263576cd4"},
     {file = "numpy-1.22.3-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:201b4d0552831f7250a08d3b38de0d989d6f6e4658b709a02a73c524ccc6ffce"},
     {file = "numpy-1.22.3-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:f8c1f39caad2c896bc0018f699882b345b2a63708008be29b1f355ebf6f933fe"},
@@ -1283,8 +1288,8 @@ tablib = [
     {file = "tablib-0.12.1.tar.gz", hash = "sha256:b8cf50a61d66655229993f2ee29220553fb2c80403479f8e6de77c0c24649d87"},
 ]
 testfixtures = [
-    {file = "testfixtures-6.0.2-py2.py3-none-any.whl", hash = "sha256:04f31490bbebd7b87eae3bc63d1f1056cdcab62c76301b92bf34fc1267ffc367"},
-    {file = "testfixtures-6.0.2.tar.gz", hash = "sha256:f8827cfc91e5cc9ac669727fdd48a85880f391b935a0a212b5cedb807879feec"},
+    {file = "testfixtures-6.18.5-py2.py3-none-any.whl", hash = "sha256:7de200e24f50a4a5d6da7019fb1197aaf5abd475efb2ec2422fdcf2f2eb98c1d"},
+    {file = "testfixtures-6.18.5.tar.gz", hash = "sha256:02dae883f567f5b70fd3ad3c9eefb95912e78ac90be6c7444b5e2f46bf572c84"},
 ]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
