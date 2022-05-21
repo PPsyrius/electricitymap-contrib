@@ -1,10 +1,10 @@
+/* eslint-disable no-console */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import 'mapbox-gl/dist/mapbox-gl.css'; // Required for map zooming buttons
-import 'url-search-params-polyfill'; // For IE 11 support
 
 import { history } from './helpers/router';
 import { store, sagaMiddleware } from './store';
@@ -46,7 +46,7 @@ ReactDOM.render(
       </Router>
     </Provider>
   </React.Suspense>,
-  document.querySelector('#app'),
+  document.querySelector('#app')
 );
 
 // Initialise mobile app (cordova)
@@ -56,6 +56,8 @@ if (window.isCordova) {
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
 // Learn more: https://www.snowpack.dev/concepts/hot-module-replacement
-if (undefined /* [snowpack] import.meta.hot */ ) {
-  undefined /* [snowpack] import.meta.hot */ .accept();
+// eslint-disable-next-line
+if (undefined /* [snowpack] import.meta.hot */) {
+  undefined /* [snowpack] import.meta.hot */
+    .accept();
 }
