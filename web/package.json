@@ -102,7 +102,7 @@
     "@microsoft/eslint-formatter-sarif": "^3.0.0",
     "@nabla/vite-plugin-eslint": "1.4.1",
     "@rollup/plugin-replace": "^5.0.2",
-    "@sentry/vite-plugin": "^0.3.0",
+    "@sentry/vite-plugin": "^0.7.2",
     "@storybook/addon-actions": "7.0.0-alpha.47",
     "@storybook/addon-backgrounds": "7.0.0-alpha.47",
     "@storybook/addon-docs": "7.0.0-alpha.47",
