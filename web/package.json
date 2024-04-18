@@ -100,7 +100,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "^2.3.0",
-    "@microsoft/eslint-formatter-sarif": "^3.0.0",
+    "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@nabla/vite-plugin-eslint": "1.6.0",
     "@rollup/plugin-replace": "^5.0.5",
     "@sentry/vite-plugin": "^2.16.0",
